@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@font-face {
+	font-family: 'Miso Regular';
+	src: url('fonts/MisoRegular/miso-regular_1.eot');
+	src: url('fonts/MisoRegular/miso-regular_1.eot?#iefix') format('embedded-opentype'),
+		  url('fonts/MisoRegular/miso-regular_1.woff2') format('woff2'),
+		  url('fonts/MisoRegular/miso-regular_1.woff') format('woff'),
+		  url('fonts/MisoRegular/miso-regular_1.ttf') format('truetype'),
+		  url('fonts/MisoRegular/miso-regular_1.svg#misoregular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MisoBold';
+	src: url('fonts/MisoBold/miso-bol.eot');
+	src: url('fonts/MisoBold/miso-bol.eot?#iefix') format('embedded-opentype'),
+		  url('fonts/MisoBold/miso-bol.woff2') format('woff2'),
+		  url('fonts/MisoBold/miso-bol.woff') format('woff'),
+		  url('fonts/MisoBold/miso-bol.ttf') format('truetype'),
+		  url('fonts/MisoBold/miso-bol.svg#misobold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+:root {
+	--font-MisoRegular: 'Miso Regular', sans-serif;
+	--font-MisoBold: 'MisoBold', sans-serif;
+	--font-Lato: 'Lato', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+
+/* Main Styles */
+body{
+	font-family: var(--font-Lato);
+	background: #fdde7e;
+	font-family: 'Conv_miso';
+	font-weight: 400;
+	color: #333;
+}
+.container{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+.cup__item{
+	background: #fff;
+	flex-basis: 360px;
+	margin: 15px;
+	padding: 30px;
+}
+.cup__item:nth-child(2){
+	padding: 50px 30px;
+}
+.cup__title{
+	font: 70px var(--font-MisoBold);
+	color: #02995b;
+	font-size: 70px;
+	margin-bottom: 15px;
+}
+.cup__link img{
+	margin-bottom: 30px;
+}
+.cup__text{
+	font: 56px var(--font-MisoRegular);
+	margin-bottom: 30px;
+}
+.cup__price{
+	font: 20px var(--font-Lato);
+	letter-spacing: 0.25px;
+	line-height: 26px;
+	color: #333333;
+}
